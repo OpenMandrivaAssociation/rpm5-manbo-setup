@@ -1,12 +1,12 @@
 Summary:	rpm5.org compatibility macros for Manbo
 Name:		rpm5-manbo-setup
 Version:	1
-Release:	%manbo_mkrel 1
+Release:	%manbo_mkrel 2
 License:	GPL
 Group:		System/Configuration/Packaging
 Source0:	rpm5.org-manbo.macros
 Source1:	convertrpmrc-optflags.sh
-Requires:	rpm-manbo-setup
+Requires:	rpm5 rpm-manbo-setup
 BuildRequires:	rpm-manbo-setup
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
