@@ -16,7 +16,7 @@ This package contains manbo compatibility macros for rpm5.org.
 
 %install
 rm -rf %{buildroot}
-install -m644 %{SOURCE0} -D %{buildroot}%{_sysconfdir}/rpm/macros.d/90rpm5.org-manbo.macros
+install -m644 %{SOURCE0} -D %{buildroot}%{_sysconfdir}/rpm5/macros.d/90rpm5.org-manbo.macros
 install -m755 %{SOURCE1} -D %{buildroot}%{_prefix}/lib/rpm/manbo/convertrpmrc-optflags.sh
 mkdir -p %{buildroot}%{_prefix}/lib/rpm/mandriva
 %{buildroot}%{_prefix}/lib/rpm/manbo/convertrpmrc-optflags.sh \
@@ -28,7 +28,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%{_sysconfdir}/rpm/macros.d/90rpm5.org-manbo.macros
+%{_sysconfdir}/rpm5/macros.d/90rpm5.org-manbo.macros
 %{_prefix}/lib/rpm/manbo/convertrpmrc-optflags.sh
 %dir %{_prefix}/lib/rpm/mandriva/*/
 %{_prefix}/lib/rpm/mandriva/*/*
